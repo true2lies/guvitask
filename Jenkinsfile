@@ -13,12 +13,12 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Build') {
             steps {
                 echo 'Skipping build'
             }
         }
-        stage('Deploy') {
+        stage('Test') {
             steps {
                 echo 'Skipping Test'
             }
