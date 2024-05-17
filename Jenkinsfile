@@ -25,7 +25,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'sudo apt-get update && apt-get install -y nginx'
+                sh 'sudo apt-get update && sudo apt-get install -y nginx'
                 sh 'sudo cp index.html /var/www/html/'
                 sh 'sudo systemctl restart nginx'
             }
